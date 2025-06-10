@@ -1,0 +1,72 @@
+[0.011s] Invoking command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description -DCMAKE_INSTALL_PREFIX=/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description
+[0.197s] -- The C compiler identification is GNU 11.4.0
+[0.671s] -- The CXX compiler identification is GNU 11.4.0
+[0.997s] -- Detecting C compiler ABI info
+[1.125s] -- Detecting C compiler ABI info - done
+[1.130s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.130s] -- Detecting C compile features
+[1.131s] -- Detecting C compile features - done
+[1.134s] -- Detecting CXX compiler ABI info
+[1.260s] -- Detecting CXX compiler ABI info - done
+[1.265s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.265s] -- Detecting CXX compile features
+[1.266s] -- Detecting CXX compile features - done
+[1.272s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.363s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.440s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.507s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.507s] -- Configured cppcheck include dirs: 
+[1.507s] -- Configured cppcheck exclude dirs and/or files: 
+[1.508s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.509s] -- Added test 'lint_cmake' to check CMake code style
+[1.510s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.514s] -- Added test 'uncrustify' to check C / C++ code style
+[1.514s] -- Configured uncrustify additional arguments: 
+[1.515s] -- Added test 'xmllint' to check XML markup files
+[1.518s] -- Configuring done
+[1.523s] -- Generating done
+[1.526s] -- Build files have been written to: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description
+[1.531s] Invoked command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description -DCMAKE_INSTALL_PREFIX=/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description
+[1.531s] Invoking command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description -- -j12 -l12
+[1.554s] Invoked command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description -- -j12 -l12
+[1.561s] Invoking command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description
+[1.566s] -- Install configuration: ""
+[1.568s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/ament_index/resource_index/package_run_dependencies/urdf_description
+[1.568s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/ament_index/resource_index/parent_prefix_path/urdf_description
+[1.569s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/environment/ament_prefix_path.sh
+[1.569s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/environment/ament_prefix_path.dsv
+[1.569s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/environment/path.sh
+[1.569s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/environment/path.dsv
+[1.569s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/local_setup.bash
+[1.569s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/local_setup.sh
+[1.570s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/local_setup.zsh
+[1.572s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/local_setup.dsv
+[1.572s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/package.dsv
+[1.572s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/ament_index/resource_index/packages/urdf_description
+[1.572s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/cmake/urdf_descriptionConfig.cmake
+[1.573s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/cmake/urdf_descriptionConfig-version.cmake
+[1.573s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/package.xml
+[1.573s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/launch
+[1.573s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/launch/display.launch.py
+[1.574s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/launch/gazebo.launch.py
+[1.574s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/urdf
+[1.574s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/urdf/go_bdx.urdf
+[1.574s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes
+[1.574s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/ear_right.stl
+[1.576s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/ear_left.stl
+[1.576s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/left_foot.stl
+[1.577s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/right_foot.stl
+[1.577s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/right_hip.stl
+[1.578s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/pelvis.stl
+[1.583s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/left_thigh.stl
+[1.584s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/left_shin.stl
+[1.585s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/head_body_pitch.stl
+[1.587s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/right_shin.stl
+[1.588s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/neck.stl
+[1.591s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/left_hip.stl
+[1.592s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/head_body_yaw.stl
+[1.596s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/left_hip_rotation.stl
+[1.597s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/right_hip_rotation.stl
+[1.598s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/head_body_roll.stl
+[1.605s] -- Installing: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/install/urdf_description/share/urdf_description/meshes/right_thigh.stl
+[1.609s] Invoked command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description/build/urdf_description

@@ -1,0 +1,9 @@
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description/CMakeFiles/uninstall.dir
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description/CMakeFiles/urdf_description_uninstall.dir
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description/CMakeFiles/test.dir
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description/CMakeFiles/edit_cache.dir
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description/CMakeFiles/rebuild_cache.dir
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description/CMakeFiles/list_install_components.dir
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description/CMakeFiles/install.dir
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description/CMakeFiles/install/local.dir
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description/CMakeFiles/install/strip.dir

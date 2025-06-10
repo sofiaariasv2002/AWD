@@ -1,0 +1,852 @@
+<sdf version='1.7'>
+  <model name='bdx'>
+    <link name='pelvis'>
+      <inertial>
+        <pose>-0.053756 0.001183 0.341947 0 -0 0</pose>
+        <mass>5.713</mass>
+        <inertia>
+          <ixx>0.201691</ixx>
+          <ixy>-0.002118</ixy>
+          <ixz>0.016433</ixz>
+          <iyy>0.431684</iyy>
+          <iyz>-0.001502</iyz>
+          <izz>0.371809</izz>
+        </inertia>
+      </inertial>
+      <collision name='pelvis_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/pelvis.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='pelvis_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/pelvis.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='left_hip_yaw' type='revolute'>
+      <pose relative_to='pelvis'>-0.033111 0.046658 0.363959 0 -0 0</pose>
+      <parent>pelvis</parent>
+      <child>left_hip_rotation</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_hip_rotation'>
+      <pose relative_to='left_hip_yaw'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.005084 0.003092 -0.063104 0 -0 0</pose>
+        <mass>0.633</mass>
+        <inertia>
+          <ixx>0.005331</ixx>
+          <ixy>8e-06</ixy>
+          <ixz>-0.000134</ixz>
+          <iyy>0.004179</iyy>
+          <iyz>9.4e-05</iyz>
+          <izz>0.001979</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_hip_rotation_collision'>
+        <pose>0.033111 -0.046658 -0.363959 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/left_hip_rotation.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='left_hip_rotation_visual'>
+        <pose>0.033111 -0.046658 -0.363959 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/left_hip_rotation.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='left_hip_roll' type='revolute'>
+      <pose relative_to='left_hip_rotation'>-0.0073 0.00275 -0.076 0 -0 0</pose>
+      <parent>left_hip_rotation</parent>
+      <child>left_hip</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_hip'>
+      <pose relative_to='left_hip_roll'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.018911 0.023471 0.000362 0 -0 0</pose>
+        <mass>0.633</mass>
+        <inertia>
+          <ixx>0.001496</ixx>
+          <ixy>-4.5e-05</ixy>
+          <ixz>-4e-06</ixz>
+          <iyy>0.000508</iyy>
+          <iyz>-4e-06</iyz>
+          <izz>0.001368</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_hip_collision'>
+        <pose>0.040411 -0.049408 -0.287959 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/left_hip.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='left_hip_visual'>
+        <pose>0.040411 -0.049408 -0.287959 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/left_hip.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='left_hip_pitch' type='revolute'>
+      <pose relative_to='left_hip'>0.017466 0.069601 0.000785 0 -0 0</pose>
+      <parent>left_hip</parent>
+      <child>left_thigh</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_thigh'>
+      <pose relative_to='left_hip_pitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.034109 0.026773 -0.034447 0 -0 0</pose>
+        <mass>0.633</mass>
+        <inertia>
+          <ixx>0.024423</ixx>
+          <ixy>-0.000254</ixy>
+          <ixz>-0.014456</ixz>
+          <iyy>0.047342</iyy>
+          <iyz>-2.5e-05</iyz>
+          <izz>0.029001</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_thigh_collision'>
+        <pose>0.022945 -0.119009 -0.288744 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/left_thigh.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='left_thigh_visual'>
+        <pose>0.022945 -0.119009 -0.288744 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/left_thigh.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='left_knee' type='revolute'>
+      <pose relative_to='left_thigh'>-0.079306 0 -0.077708 0 -0 0</pose>
+      <parent>left_thigh</parent>
+      <child>left_shin</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_shin'>
+      <pose relative_to='left_knee'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.022295 -0.014937 -0.090059 0 -0 0</pose>
+        <mass>0.633</mass>
+        <inertia>
+          <ixx>0.008877</ixx>
+          <ixy>0.000288</ixy>
+          <ixz>0.002995</ixz>
+          <iyy>0.011732</iyy>
+          <iyz>-0.000503</iyz>
+          <izz>0.003534</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_shin_collision'>
+        <pose>0.102251 -0.119009 -0.211036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/left_shin.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='left_shin_visual'>
+        <pose>0.102251 -0.119009 -0.211036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/left_shin.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='left_ankle' type='revolute'>
+      <pose relative_to='left_shin'>0.045 -0.0152 -0.13 0 -0 0</pose>
+      <parent>left_shin</parent>
+      <child>left_foot_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_foot_link'>
+      <pose relative_to='left_ankle'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.031765 0.007933 -0.042152 0 -0 0</pose>
+        <mass>0.678</mass>
+        <inertia>
+          <ixx>0.003343</ixx>
+          <ixy>0.000338</ixy>
+          <ixz>0.000572</ixz>
+          <iyy>0.010216</iyy>
+          <iyz>-0.000559</iyz>
+          <izz>0.008414</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_foot_link_collision'>
+        <pose>0.057251 -0.103809 -0.081036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/left_foot.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='left_foot_link_visual'>
+        <pose>0.057251 -0.103809 -0.081036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/left_foot.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='neck_pitch' type='revolute'>
+      <pose relative_to='pelvis'>0.056339 0.0119 0.395171 0 -0 0</pose>
+      <parent>pelvis</parent>
+      <child>neck</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='neck'>
+      <pose relative_to='neck_pitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.024004 -0.016411 0.050435 0 -0 0</pose>
+        <mass>0.633</mass>
+        <inertia>
+          <ixx>0.005277</ixx>
+          <ixy>0.000151</ixy>
+          <ixz>0.00222</ixz>
+          <iyy>0.006434</iyy>
+          <iyz>-0.00041</iyz>
+          <izz>0.00225</izz>
+        </inertia>
+      </inertial>
+      <collision name='neck_collision'>
+        <pose>-0.056339 -0.0119 -0.395171 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/neck.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='neck_visual'>
+        <pose>-0.056339 -0.0119 -0.395171 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/neck.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='head_pitch' type='revolute'>
+      <pose relative_to='neck'>-0.065022 -0.01175 0.11088 0 -0 0</pose>
+      <parent>neck</parent>
+      <child>head_body_pitch</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>7.3</effort>
+          <velocity>5.55</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='head_body_pitch'>
+      <pose relative_to='head_pitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.012968 -0.001715 0.027756 0 -0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>0.000368</ixx>
+          <ixy>1.6e-05</ixy>
+          <ixz>8.6e-05</ixz>
+          <iyy>0.000336</iyy>
+          <iyz>-2.7e-05</iyz>
+          <izz>0.000202</izz>
+        </inertia>
+      </inertial>
+      <collision name='head_body_pitch_collision'>
+        <pose>0.008683 -0.00015 -0.506051 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/head_body_pitch.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='head_body_pitch_visual'>
+        <pose>0.008683 -0.00015 -0.506051 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/head_body_pitch.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='head_yaw' type='revolute'>
+      <pose relative_to='head_body_pitch'>0.000299 0.0007 0.02897 0 -0 0</pose>
+      <parent>head_body_pitch</parent>
+      <child>head_body_yaw</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>7.3</effort>
+          <velocity>5.55</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='head_body_yaw'>
+      <pose relative_to='head_yaw'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.007855 -1e-06 0.022545 0 -0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>0.000226</ixx>
+          <ixy>0</ixy>
+          <ixz>-5.7e-05</ixz>
+          <iyy>0.000559</iyy>
+          <iyz>0</iyz>
+          <izz>0.00054</izz>
+        </inertia>
+      </inertial>
+      <collision name='head_body_yaw_collision'>
+        <pose>0.008384 -0.00085 -0.535021 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/head_body_yaw.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='head_body_yaw_visual'>
+        <pose>0.008384 -0.00085 -0.535021 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/head_body_yaw.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='head_roll' type='revolute'>
+      <pose relative_to='head_body_yaw'>0.039892 0 0.02715 0 -0 0</pose>
+      <parent>head_body_yaw</parent>
+      <child>head_body_roll</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>7.3</effort>
+          <velocity>5.55</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='head_body_roll'>
+      <pose relative_to='head_roll'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.033969 0.001488 0.002428 0 -0 0</pose>
+        <mass>0.4</mass>
+        <inertia>
+          <ixx>0.041565</ixx>
+          <ixy>-0.001049</ixy>
+          <ixz>-0.001655</ixz>
+          <iyy>0.047007</iyy>
+          <iyz>-0.000217</iyz>
+          <izz>0.080654</izz>
+        </inertia>
+      </inertial>
+      <collision name='head_body_roll_collision'>
+        <pose>-0.031508 -0.00085 -0.562171 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/head_body_roll.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='head_body_roll_visual'>
+        <pose>-0.031508 -0.00085 -0.562171 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/head_body_roll.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='left_antenna' type='revolute'>
+      <pose relative_to='head_body_roll'>-0.16665 0.0683 0.001231 0 -0 0</pose>
+      <parent>head_body_roll</parent>
+      <child>ear_left</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>0.2943</effort>
+          <velocity>13.62</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='ear_left'>
+      <pose relative_to='left_antenna'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.000162 0.024729 0.016145 0 -0 0</pose>
+        <mass>0.0964016</mass>
+        <inertia>
+          <ixx>0.000207</ixx>
+          <ixy>0</ixy>
+          <ixz>-1.4e-05</ixz>
+          <iyy>0.0002</iyy>
+          <iyz>-9e-06</iyz>
+          <izz>2.1e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='ear_left_collision'>
+        <pose>0.135142 -0.06915 -0.563402 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/ear_left.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='ear_left_visual'>
+        <pose>0.135142 -0.06915 -0.563402 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/ear_left.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='right_antenna' type='revolute'>
+      <pose relative_to='head_body_roll'>-0.16665 -0.0697 0.001231 0 -0 0</pose>
+      <parent>head_body_roll</parent>
+      <child>ear_right</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>0.2943</effort>
+          <velocity>13.62</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='ear_right'>
+      <pose relative_to='right_antenna'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.000162 -0.024729 0.016145 0 -0 0</pose>
+        <mass>0.0964016</mass>
+        <inertia>
+          <ixx>0.000207</ixx>
+          <ixy>0</ixy>
+          <ixz>-1.4e-05</ixz>
+          <iyy>0.0002</iyy>
+          <iyz>9e-06</iyz>
+          <izz>2.1e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='ear_right_collision'>
+        <pose>0.135142 0.06885 -0.563402 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/ear_right.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='ear_right_visual'>
+        <pose>0.135142 0.06885 -0.563402 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/ear_right.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='right_hip_yaw' type='revolute'>
+      <pose relative_to='pelvis'>-0.033111 -0.046658 0.363959 0 -0 0</pose>
+      <parent>pelvis</parent>
+      <child>right_hip_rotation</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_hip_rotation'>
+      <pose relative_to='right_hip_yaw'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.005084 -0.003092 -0.063104 0 -0 0</pose>
+        <mass>0.633</mass>
+        <inertia>
+          <ixx>0.005331</ixx>
+          <ixy>-8e-06</ixy>
+          <ixz>-0.000134</ixz>
+          <iyy>0.004179</iyy>
+          <iyz>-9.4e-05</iyz>
+          <izz>0.001979</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_hip_rotation_collision'>
+        <pose>0.033111 0.046658 -0.363959 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/right_hip_rotation.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='right_hip_rotation_visual'>
+        <pose>0.033111 0.046658 -0.363959 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/right_hip_rotation.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='right_hip_roll' type='revolute'>
+      <pose relative_to='right_hip_rotation'>-0.0073 -0.00275 -0.076 0 -0 0</pose>
+      <parent>right_hip_rotation</parent>
+      <child>right_hip</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_hip'>
+      <pose relative_to='right_hip_roll'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.018911 -0.023471 0.000362 0 -0 0</pose>
+        <mass>0.633</mass>
+        <inertia>
+          <ixx>0.001496</ixx>
+          <ixy>4.5e-05</ixy>
+          <ixz>-4e-06</ixz>
+          <iyy>0.000508</iyy>
+          <iyz>4e-06</iyz>
+          <izz>0.001368</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_hip_collision'>
+        <pose>0.040411 0.049408 -0.287959 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/right_hip.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='right_hip_visual'>
+        <pose>0.040411 0.049408 -0.287959 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/right_hip.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='right_hip_pitch' type='revolute'>
+      <pose relative_to='right_hip'>0.017466 -0.069601 0.000785 0 -0 0</pose>
+      <parent>right_hip</parent>
+      <child>right_thigh</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_thigh'>
+      <pose relative_to='right_hip_pitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.034109 -0.026773 -0.034447 0 -0 0</pose>
+        <mass>0.633</mass>
+        <inertia>
+          <ixx>0.024423</ixx>
+          <ixy>0.000254</ixy>
+          <ixz>-0.014456</ixz>
+          <iyy>0.047342</iyy>
+          <iyz>2.5e-05</iyz>
+          <izz>0.029001</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_thigh_collision'>
+        <pose>0.022945 0.119009 -0.288744 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/right_thigh.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='right_thigh_visual'>
+        <pose>0.022945 0.119009 -0.288744 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/right_thigh.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='right_knee' type='revolute'>
+      <pose relative_to='right_thigh'>-0.079306 0 -0.077708 0 -0 0</pose>
+      <parent>right_thigh</parent>
+      <child>right_shin</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_shin'>
+      <pose relative_to='right_knee'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.022295 0.014937 -0.090059 0 -0 0</pose>
+        <mass>0.633</mass>
+        <inertia>
+          <ixx>0.008877</ixx>
+          <ixy>-0.000288</ixy>
+          <ixz>0.002995</ixz>
+          <iyy>0.011732</iyy>
+          <iyz>0.000503</iyz>
+          <izz>0.003534</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_shin_collision'>
+        <pose>0.102251 0.119009 -0.211036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/right_shin.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='right_shin_visual'>
+        <pose>0.102251 0.119009 -0.211036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/right_shin.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='right_ankle' type='revolute'>
+      <pose relative_to='right_shin'>0.045 0.0152 -0.13 0 -0 0</pose>
+      <parent>right_shin</parent>
+      <child>right_foot_link</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-0.785398</lower>
+          <upper>0.785398</upper>
+          <effort>23.7</effort>
+          <velocity>30</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_foot_link'>
+      <pose relative_to='right_ankle'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.031765 -0.007933 -0.042152 0 -0 0</pose>
+        <mass>0.678</mass>
+        <inertia>
+          <ixx>0.003343</ixx>
+          <ixy>-0.000338</ixy>
+          <ixz>0.000572</ixz>
+          <iyy>0.010216</iyy>
+          <iyz>0.000559</iyz>
+          <izz>0.008414</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_foot_link_collision'>
+        <pose>0.057251 0.103809 -0.081036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/right_foot.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='right_foot_link_visual'>
+        <pose>0.057251 0.103809 -0.081036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_description/meshes/right_foot.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
