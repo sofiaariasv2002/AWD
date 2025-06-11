@@ -25,9 +25,13 @@ endif()
 
 ament_package()
 
+find_package(rclcpp REQUIRED)
+find_package(trajectory_msgs REQUIRED)
+
+
 # Para instalar los archivos de lanzamiento
 install(
-  DIRECTORY launch meshes urdf
+  DIRECTORY launch meshes urdf config
   DESTINATION share/${PROJECT_NAME}
 )
 
