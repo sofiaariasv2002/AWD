@@ -32,4 +32,4 @@
 /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_hip_rotation.stl
 /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/head_body_roll.stl
 /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_thigh.stl
-/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/urdf/go_bdx.urdf
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/urdf/go_bdx.urdf.xacro

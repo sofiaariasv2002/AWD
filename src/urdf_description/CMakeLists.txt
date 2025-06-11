@@ -31,14 +31,3 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
-# (Opcional) Para instalar tu modelo URDF/xacro
-# install(
-#  DIRECTORY urdf/
-#  DESTINATION share/${PROJECT_NAME}/urdf
-#)
-
-# (Opcional) Para instalar mallas, texturas, etc.
-#install(
-#  DIRECTORY meshes/
-#  DESTINATION share/${PROJECT_NAME}/meshes
-#)
