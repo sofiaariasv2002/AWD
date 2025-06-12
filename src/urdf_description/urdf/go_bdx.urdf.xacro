@@ -776,9 +776,13 @@
   
   <gazebo>
     <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
+    <mu2>1.5</mu2>  
     <kp>1e6</kp>
     <kd>1e3</kd>
+  </gazebo>
+
+  <gazebo>
+    <static>true</static>
   </gazebo>
 
 </robot>
