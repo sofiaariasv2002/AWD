@@ -5,9 +5,11 @@
   </material>
   <link name="trunk">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <mass value="1e-9" />
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1.0"/>
+      <inertia 
+        ixx="0.005" ixy="0.0" ixz="0.0"
+        iyy="0.005" iyz="0.0" izz="0.005"/>
     </inertial>
   </link>
   <joint name="trunk_frame" type="fixed">
@@ -150,9 +152,11 @@
   </link>
   <link name="left_foot">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <mass value="1e-9" />
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia 
+        ixx="0.0002" ixy="0.0" ixz="0.0"
+        iyy="0.0002" iyz="0.0" izz="0.0002"/>
     </inertial>
   </link>
   <joint name="left_foot_frame" type="fixed">
@@ -263,9 +267,11 @@
   </link>
   <link name="right_foot">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <mass value="1e-9" />
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia 
+        ixx="0.0002" ixy="0.0" ixz="0.0"
+        iyy="0.0002" iyz="0.0" izz="0.0002"/>
     </inertial>
   </link>
   <joint name="right_foot_frame" type="fixed">
@@ -748,10 +754,31 @@
     </joint>
   </ros2_control>
 
-  <gazebo>
+  <gazebo>  
     <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
-      <!-- Asegúrate de apuntar al paquete correcto -->
       <parameters>$(find urdf_description)/config/controllers.yaml</parameters>
     </plugin>
   </gazebo>
+
+  <gazebo reference="left_foot">
+    <mu1>1.5</mu1>  <!-- Fricción estática -->
+    <mu2>1.5</mu2>  <!-- Fricción dinámica -->
+    <kp>1e6</kp>    <!-- Rigidez del contacto -->
+    <kd>1e3</kd>    <!-- Amortiguamiento -->
+  </gazebo>
+
+  <gazebo reference="right_foot">
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <kp>1e6</kp>
+    <kd>1e3</kd>
+  </gazebo>
+  
+  <gazebo>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <kp>1e6</kp>
+    <kd>1e3</kd>
+  </gazebo>
+
 </robot>

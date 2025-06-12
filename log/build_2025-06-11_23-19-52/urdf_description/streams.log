@@ -1,0 +1,42 @@
+[0.011s] Invoking command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description -- -j12 -l12
+[0.039s] Invoked command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description -- -j12 -l12
+[0.045s] Invoking command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description
+[0.050s] -- Install configuration: ""
+[0.050s] -- Execute custom install script
+[0.050s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/ament_index/resource_index/package_run_dependencies/urdf_description
+[0.050s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/ament_index/resource_index/parent_prefix_path/urdf_description
+[0.050s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/environment/ament_prefix_path.sh
+[0.050s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/environment/ament_prefix_path.dsv
+[0.051s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/environment/path.sh
+[0.051s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/environment/path.dsv
+[0.051s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/local_setup.bash
+[0.051s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/local_setup.sh
+[0.051s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/local_setup.zsh
+[0.051s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/local_setup.dsv
+[0.051s] -- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/package.dsv
+[0.058s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/ament_index/resource_index/packages/urdf_description
+[0.058s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/cmake/urdf_descriptionConfig.cmake
+[0.058s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/cmake/urdf_descriptionConfig-version.cmake
+[0.058s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/package.xml
+[0.058s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/launch/display.launch.py
+[0.058s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/launch/gazebo.launch.py
+[0.058s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/ear_left.stl
+[0.059s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/ear_right.stl
+[0.059s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/head_body_pitch.stl
+[0.059s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/head_body_roll.stl
+[0.059s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/head_body_yaw.stl
+[0.059s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/left_foot.stl
+[0.059s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/left_hip.stl
+[0.059s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/left_hip_rotation.stl
+[0.060s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/left_shin.stl
+[0.060s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/left_thigh.stl
+[0.060s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/neck.stl
+[0.060s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/pelvis.stl
+[0.060s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_foot.stl
+[0.060s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_hip.stl
+[0.060s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_hip_rotation.stl
+[0.060s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_shin.stl
+[0.061s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_thigh.stl
+[0.061s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/urdf/go_bdx.urdf.xacro
+[0.061s] -- Up-to-date symlink: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/config/controllers.yaml
+[0.062s] Invoked command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description
