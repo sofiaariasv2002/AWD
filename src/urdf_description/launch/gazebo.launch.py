@@ -36,13 +36,6 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description}],
     )
 
-    # Joint state publisher GUI (opcional)
-    joint_state_publisher_gui = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        output='screen'
-    )
-
     # Controller manager
     controller_manager = Node(
         package='controller_manager',
@@ -64,7 +57,7 @@ def generate_launch_description():
             '-entity', 'bdx',
             '-x', '0',
             '-y', '0',
-            '-z', '0.01'
+            '-z', '0.082'
         ],
     )
 
@@ -97,7 +90,6 @@ def generate_launch_description():
     return LaunchDescription([
         gazebo_launch,
         robot_state_publisher,
-        joint_state_publisher_gui,
         controller_manager,
         spawn_entity,
         delayed_controller_loads

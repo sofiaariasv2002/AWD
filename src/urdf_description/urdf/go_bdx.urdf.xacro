@@ -71,59 +71,59 @@
     <origin rpy="0 0 0" xyz="0.017466 -0.069601 0.000785"/>
     <parent link="right_hip"/>
     <child link="right_thigh"/>
-    <axis xyz="-0.0 -1.0 0.0"/>
+    <axis xyz="-0.0 1.0 0.0"/>
     <limit lower="-0.7853982" upper="0.7853982" effort="23.7" velocity="30"/>
   </joint>
   <joint name="right_knee" type="revolute">
     <origin rpy="0 0 0" xyz="-0.079306 0.0 -0.077708"/>
     <parent link="right_thigh"/>
     <child link="right_shin"/>
-    <axis xyz="0.0 1.0 -0.0"/>
+    <axis xyz="0.0 -1.0 -0.0"/>
     <limit lower="-0.7853982" upper="0.7853982" effort="23.7" velocity="30"/>
   </joint>
   <joint name="right_ankle" type="revolute">
     <origin rpy="0 0 0" xyz="0.045 0.0152 -0.13"/>
     <parent link="right_shin"/>
     <child link="right_foot_link"/>
-    <axis xyz="-0.0 -1.0 0.0"/>
+    <axis xyz="-0.0 1.0 0.0"/>
     <limit lower="-0.7853982" upper="0.7853982" effort="23.7" velocity="30"/>
   </joint>
-  <joint name="neck_pitch" type="revolute">
+  <joint name="neck_pitch" type="fixed">
     <origin rpy="0 0 0" xyz="0.056339 0.0119 0.395171"/>
     <parent link="pelvis"/>
     <child link="neck"/>
     <axis xyz="-0.0 -1.0 0.0"/>
     <limit lower="-0.7853982" upper="0.7853982" effort="23.7" velocity="30"/>
   </joint>
-  <joint name="head_pitch" type="revolute">
+  <joint name="head_pitch" type="fixed">
     <origin rpy="0 0 0" xyz="-0.065022 -0.01175 0.11088"/>
     <parent link="neck"/>
     <child link="head_body_pitch"/>
     <axis xyz="-0.0 -1.0 0.0"/>
     <limit lower="-0.7853982" upper="0.7853982" effort="7.3" velocity="5.55"/>
   </joint>
-  <joint name="head_yaw" type="revolute">
+  <joint name="head_yaw" type="fixed">
     <origin rpy="0 0 0" xyz="0.000299 0.0007 0.02897"/>
     <parent link="head_body_pitch"/>
     <child link="head_body_yaw"/>
     <axis xyz="-0.0 -0.0 1.0"/>
     <limit lower="-0.7853982" upper="0.7853982" effort="7.3" velocity="5.55"/>
   </joint>
-  <joint name="head_roll" type="revolute">
+  <joint name="head_roll" type="fixed">
     <origin rpy="0 0 0" xyz="0.039892 0.0 0.02715"/>
     <parent link="head_body_yaw"/>
     <child link="head_body_roll"/>
     <axis xyz="1.0 -0.0 0.0"/>
     <limit lower="-0.7853982" upper="0.7853982" effort="7.3" velocity="5.55"/>
   </joint>
-  <joint name="left_antenna" type="revolute">
+  <joint name="left_antenna" type="fixed">
     <origin rpy="0 0 0" xyz="-0.16665 0.0683 0.001231"/>
     <parent link="head_body_roll"/>
     <child link="ear_left"/>
     <axis xyz="-0.0 -1.0 -0.0"/>
     <limit lower="-0.7853982" upper="0.7853982" effort="0.2943" velocity="13.62"/>
   </joint>
-  <joint name="right_antenna" type="revolute">
+  <joint name="right_antenna" type="fixed">
     <origin rpy="0 0 0" xyz="-0.16665 -0.0697 0.001231"/>
     <parent link="head_body_roll"/>
     <child link="ear_right"/>
@@ -514,118 +514,7 @@
     </collision>
   </link>
 
-  <!-- Transmissions para pierna izquierda -->
-  <transmission name="left_hip_yaw_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="left_hip_yaw">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="left_hip_yaw_motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="left_hip_roll_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="left_hip_roll">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="left_hip_roll_motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="left_hip_pitch_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="left_hip_pitch">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="left_hip_pitch_motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="left_knee_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="left_knee">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="left_knee_motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="left_ankle_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="left_ankle">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="left_ankle_motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <!-- Transmissions para pierna derecha -->
-  <transmission name="right_hip_yaw_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="right_hip_yaw">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="right_hip_yaw_motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="right_hip_roll_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="right_hip_roll">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="right_hip_roll_motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="right_hip_pitch_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="right_hip_pitch">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="right_hip_pitch_motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="right_knee_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="right_knee">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="right_knee_motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="right_ankle_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="right_ankle">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="right_ankle_motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
+<!-- robot control-->
   <ros2_control name="robot_controller" type="system">
     <hardware>
       <plugin>gazebo_ros2_control/GazeboSystem</plugin>
@@ -760,29 +649,34 @@
     </plugin>
   </gazebo>
 
-  <gazebo reference="left_foot">
-    <mu1>1.5</mu1>  <!-- Fricción estática -->
-    <mu2>1.5</mu2>  <!-- Fricción dinámica -->
-    <kp>1e6</kp>    <!-- Rigidez del contacto -->
-    <kd>1e3</kd>    <!-- Amortiguamiento -->
+  <gazebo reference="ear_right">
+    <gravity>0</gravity>
   </gazebo>
 
-  <gazebo reference="right_foot">
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <kp>1e6</kp>
-    <kd>1e3</kd>
+  <gazebo reference="ear_left">
+    <gravity>0</gravity>
   </gazebo>
+
+  <gazebo reference="head">
+    <gravity>0</gravity>
+  </gazebo>
+
+  <gazebo reference="head_body_roll">
+    <gravity>0</gravity>
+  </gazebo>
+
+  <gazebo reference="head_body_yaw">
+    <gravity>0</gravity>
+  </gazebo>
+
+  <gazebo reference="head_body_pitch">
+    <gravity>0</gravity>
+  </gazebo>
+
+  <gazebo reference="neck">
+    <gravity>0</gravity>
+  </gazebo>
+
   
-  <gazebo>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>  
-    <kp>1e6</kp>
-    <kd>1e3</kd>
-  </gazebo>
-
-  <gazebo>
-    <static>true</static>
-  </gazebo>
 
 </robot>
