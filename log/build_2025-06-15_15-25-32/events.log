@@ -1,0 +1,189 @@
+[0.000000] (-) TimerEvent: {}
+[0.000434] (urdf_description) JobQueued: {'identifier': 'urdf_description', 'dependencies': OrderedDict()}
+[0.000492] (urdf_description) JobStarted: {'identifier': 'urdf_description'}
+[0.008363] (urdf_description) JobProgress: {'identifier': 'urdf_description', 'progress': 'cmake'}
+[0.009591] (urdf_description) Command: {'cmd': ['/usr/bin/cmake', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/urdf_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description'], 'cwd': '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/root'), ('OLDPWD', '/root'), ('NVM_BIN', '/root/.nvm/versions/node/v22.9.0/bin'), ('NVM_INC', '/root/.nvm/versions/node/v22.9.0/include/node'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('NVM_DIR', '/root/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('NAME', 'MSI-de-Sofia'), ('WSL_INTEROP', '/run/WSL/21961_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models::/share/urdf_description/meshes'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/root/.nvm/versions/node/v22.9.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Python/Python311/Scripts/:/mnt/c/Python/Python311/:/mnt/c/Users/sofia/AppData/Local/Microsoft/WindowsApps:/mnt/c/intelFPGA/18.1/modelsim_ase/win32aloem:/mnt/c/Users/sofia/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/sofia/AppData/Local/GitHubDesktop/bin:/mnt/c/Gradle/gradle-8.4/bin:/mnt/c/intelFPGA_lite/20.1/modelsim_ase/win32aloem:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11::/share/urdf_description'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.099013] (-) TimerEvent: {}
+[0.199399] (-) TimerEvent: {}
+[0.284298] (urdf_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.299488] (-) TimerEvent: {}
+[0.399864] (-) TimerEvent: {}
+[0.500336] (-) TimerEvent: {}
+[0.600712] (-) TimerEvent: {}
+[0.701080] (-) TimerEvent: {}
+[0.801503] (-) TimerEvent: {}
+[0.901953] (-) TimerEvent: {}
+[1.002346] (-) TimerEvent: {}
+[1.005274] (urdf_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.102455] (-) TimerEvent: {}
+[1.202805] (-) TimerEvent: {}
+[1.303203] (-) TimerEvent: {}
+[1.403566] (-) TimerEvent: {}
+[1.436609] (urdf_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.503670] (-) TimerEvent: {}
+[1.604120] (-) TimerEvent: {}
+[1.612325] (urdf_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.619272] (urdf_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.619932] (urdf_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.621049] (urdf_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.625453] (urdf_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.704267] (-) TimerEvent: {}
+[1.804654] (-) TimerEvent: {}
+[1.805433] (urdf_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.812211] (urdf_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.812482] (urdf_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.812979] (urdf_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.824060] (urdf_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.904851] (-) TimerEvent: {}
+[1.949128] (urdf_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.004968] (-) TimerEvent: {}
+[2.011422] (urdf_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.046481] (urdf_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.105174] (-) TimerEvent: {}
+[2.137885] (urdf_description) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.138061] (urdf_description) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.138114] (urdf_description) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.140280] (urdf_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.144577] (urdf_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.147158] (urdf_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.159039] (urdf_description) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.159185] (urdf_description) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.162215] (urdf_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.167938] (urdf_description) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.205296] (-) TimerEvent: {}
+[2.305676] (-) TimerEvent: {}
+[2.381140] (urdf_description) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.386830] (urdf_description) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.397317] (urdf_description) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.405780] (-) TimerEvent: {}
+[2.414437] (urdf_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.434165] (urdf_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.487333] (urdf_description) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.490751] (urdf_description) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.505879] (-) TimerEvent: {}
+[2.606282] (-) TimerEvent: {}
+[2.706648] (-) TimerEvent: {}
+[2.807026] (-) TimerEvent: {}
+[2.907411] (-) TimerEvent: {}
+[3.007802] (-) TimerEvent: {}
+[3.108158] (-) TimerEvent: {}
+[3.208508] (-) TimerEvent: {}
+[3.308944] (-) TimerEvent: {}
+[3.409320] (-) TimerEvent: {}
+[3.509744] (-) TimerEvent: {}
+[3.610125] (-) TimerEvent: {}
+[3.710473] (-) TimerEvent: {}
+[3.810899] (-) TimerEvent: {}
+[3.911324] (-) TimerEvent: {}
+[4.011701] (-) TimerEvent: {}
+[4.055092] (urdf_description) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.111836] (-) TimerEvent: {}
+[4.212188] (-) TimerEvent: {}
+[4.312534] (-) TimerEvent: {}
+[4.412879] (-) TimerEvent: {}
+[4.513211] (-) TimerEvent: {}
+[4.613542] (-) TimerEvent: {}
+[4.713917] (-) TimerEvent: {}
+[4.814324] (-) TimerEvent: {}
+[4.914666] (-) TimerEvent: {}
+[5.015038] (-) TimerEvent: {}
+[5.115454] (-) TimerEvent: {}
+[5.215834] (-) TimerEvent: {}
+[5.316253] (-) TimerEvent: {}
+[5.416631] (-) TimerEvent: {}
+[5.517017] (-) TimerEvent: {}
+[5.617403] (-) TimerEvent: {}
+[5.618891] (urdf_description) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.717536] (-) TimerEvent: {}
+[5.817925] (-) TimerEvent: {}
+[5.918317] (-) TimerEvent: {}
+[6.018716] (-) TimerEvent: {}
+[6.119145] (-) TimerEvent: {}
+[6.219535] (-) TimerEvent: {}
+[6.319886] (-) TimerEvent: {}
+[6.420226] (-) TimerEvent: {}
+[6.520564] (-) TimerEvent: {}
+[6.620886] (-) TimerEvent: {}
+[6.721221] (-) TimerEvent: {}
+[6.821610] (-) TimerEvent: {}
+[6.922005] (-) TimerEvent: {}
+[7.022390] (-) TimerEvent: {}
+[7.122809] (-) TimerEvent: {}
+[7.223144] (-) TimerEvent: {}
+[7.323596] (-) TimerEvent: {}
+[7.423975] (-) TimerEvent: {}
+[7.524309] (-) TimerEvent: {}
+[7.624682] (-) TimerEvent: {}
+[7.725051] (-) TimerEvent: {}
+[7.825372] (-) TimerEvent: {}
+[7.925751] (-) TimerEvent: {}
+[8.026087] (-) TimerEvent: {}
+[8.126413] (-) TimerEvent: {}
+[8.226751] (-) TimerEvent: {}
+[8.309259] (urdf_description) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.322626] (urdf_description) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.326834] (-) TimerEvent: {}
+[8.427150] (-) TimerEvent: {}
+[8.500837] (urdf_description) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.501089] (urdf_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.527237] (-) TimerEvent: {}
+[8.627611] (-) TimerEvent: {}
+[8.670748] (urdf_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.671778] (urdf_description) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.727752] (-) TimerEvent: {}
+[8.738569] (urdf_description) StdoutLine: {'line': b'-- Found trajectory_msgs: 4.8.0 (/opt/ros/humble/share/trajectory_msgs/cmake)\n'}
+[8.776187] (urdf_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.782802] (urdf_description) StdoutLine: {'line': b'-- Generating done\n'}
+[8.786384] (urdf_description) StdoutLine: {'line': b'-- Build files have been written to: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description\n'}
+[8.797530] (urdf_description) CommandEnded: {'returncode': 0}
+[8.798541] (urdf_description) JobProgress: {'identifier': 'urdf_description', 'progress': 'build'}
+[8.800201] (urdf_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description', '--', '-j12', '-l12'], 'cwd': '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/root'), ('OLDPWD', '/root'), ('NVM_BIN', '/root/.nvm/versions/node/v22.9.0/bin'), ('NVM_INC', '/root/.nvm/versions/node/v22.9.0/include/node'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('NVM_DIR', '/root/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('NAME', 'MSI-de-Sofia'), ('WSL_INTEROP', '/run/WSL/21961_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models::/share/urdf_description/meshes'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/root/.nvm/versions/node/v22.9.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Python/Python311/Scripts/:/mnt/c/Python/Python311/:/mnt/c/Users/sofia/AppData/Local/Microsoft/WindowsApps:/mnt/c/intelFPGA/18.1/modelsim_ase/win32aloem:/mnt/c/Users/sofia/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/sofia/AppData/Local/GitHubDesktop/bin:/mnt/c/Gradle/gradle-8.4/bin:/mnt/c/intelFPGA_lite/20.1/modelsim_ase/win32aloem:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11::/share/urdf_description'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[8.827838] (-) TimerEvent: {}
+[8.838726] (urdf_description) CommandEnded: {'returncode': 0}
+[8.840240] (urdf_description) JobProgress: {'identifier': 'urdf_description', 'progress': 'install'}
+[8.847801] (urdf_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description'], 'cwd': '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/root'), ('OLDPWD', '/root'), ('NVM_BIN', '/root/.nvm/versions/node/v22.9.0/bin'), ('NVM_INC', '/root/.nvm/versions/node/v22.9.0/include/node'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('NVM_DIR', '/root/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('NAME', 'MSI-de-Sofia'), ('WSL_INTEROP', '/run/WSL/21961_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models::/share/urdf_description/meshes'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/root/.nvm/versions/node/v22.9.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Python/Python311/Scripts/:/mnt/c/Python/Python311/:/mnt/c/Users/sofia/AppData/Local/Microsoft/WindowsApps:/mnt/c/intelFPGA/18.1/modelsim_ase/win32aloem:/mnt/c/Users/sofia/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/sofia/AppData/Local/GitHubDesktop/bin:/mnt/c/Gradle/gradle-8.4/bin:/mnt/c/intelFPGA_lite/20.1/modelsim_ase/win32aloem:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11::/share/urdf_description'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/urdf_description'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[8.853865] (urdf_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.854377] (urdf_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.855182] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/ament_index/resource_index/package_run_dependencies/urdf_description\n'}
+[8.862883] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/ament_index/resource_index/parent_prefix_path/urdf_description\n'}
+[8.870230] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/environment/ament_prefix_path.sh\n'}
+[8.877041] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/environment/ament_prefix_path.dsv\n'}
+[8.884277] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/environment/path.sh\n'}
+[8.891328] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/environment/path.dsv\n'}
+[8.898381] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/local_setup.bash\n'}
+[8.905130] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/local_setup.sh\n'}
+[8.911596] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/local_setup.zsh\n'}
+[8.918053] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/local_setup.dsv\n'}
+[8.924856] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/package.dsv\n'}
+[8.927931] (-) TimerEvent: {}
+[8.931321] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/ament_index/resource_index/packages/urdf_description\n'}
+[8.938204] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/cmake/urdf_descriptionConfig.cmake\n'}
+[8.944903] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/cmake/urdf_descriptionConfig-version.cmake\n'}
+[8.951924] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/package.xml\n'}
+[8.959242] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/launch/display.launch.py\n'}
+[8.966922] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/launch/gazebo.launch.py\n'}
+[8.973883] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/launch/main.launch.py\n'}
+[8.981254] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/ear_left.stl\n'}
+[8.988614] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/ear_right.stl\n'}
+[8.995716] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/head_body_pitch.stl\n'}
+[9.002506] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/head_body_roll.stl\n'}
+[9.010342] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/head_body_yaw.stl\n'}
+[9.017818] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/left_foot.stl\n'}
+[9.024910] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/left_hip.stl\n'}
+[9.028003] (-) TimerEvent: {}
+[9.031610] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/left_hip_rotation.stl\n'}
+[9.038377] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/left_shin.stl\n'}
+[9.045972] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/left_thigh.stl\n'}
+[9.052948] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/neck.stl\n'}
+[9.059355] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/pelvis.stl\n'}
+[9.066007] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_foot.stl\n'}
+[9.072422] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_hip.stl\n'}
+[9.078932] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_hip_rotation.stl\n'}
+[9.085430] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_shin.stl\n'}
+[9.092863] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/right_thigh.stl\n'}
+[9.100181] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/urdf/go_bdx.urdf.xacro\n'}
+[9.107351] (urdf_description) StdoutLine: {'line': b'-- Symlinking: /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/config/controllers.yaml\n'}
+[9.116443] (urdf_description) CommandEnded: {'returncode': 0}
+[9.128099] (-) TimerEvent: {}
+[9.135753] (urdf_description) JobEnded: {'identifier': 'urdf_description', 'rc': 0}
+[9.136957] (-) EventReactorShutdown: {}
