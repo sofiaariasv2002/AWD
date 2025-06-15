@@ -514,6 +514,120 @@
     </collision>
   </link>
 
+<!-- Transmissions -->
+  <!-- Transmissions para pierna izquierda -->
+  <transmission name="left_hip_yaw_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_hip_yaw">
+      <hardwareInterface>position</hardwareInterface>
+    </joint>
+    <actuator name="left_hip_yaw_motor">
+      <hardwareInterface>position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_hip_roll_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_hip_roll">
+      <hardwareInterface>position</hardwareInterface>
+    </joint>
+    <actuator name="left_hip_roll_motor">
+      <hardwareInterface>position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_hip_pitch_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_hip_pitch">
+      <hardwareInterface>position</hardwareInterface>
+    </joint>
+    <actuator name="left_hip_pitch_motor">
+      <hardwareInterface>position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_knee_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_knee">
+      <hardwareInterface>position</hardwareInterface>
+    </joint>
+    <actuator name="left_knee_motor">
+      <hardwareInterface>position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_ankle_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_ankle">
+      <hardwareInterface>position</hardwareInterface>
+    </joint>
+    <actuator name="left_ankle_motor">
+      <hardwareInterface>position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <!-- Transmissions para pierna derecha -->
+  <transmission name="right_hip_yaw_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_hip_yaw">
+      <hardwareInterface>position</hardwareInterface>
+    </joint>
+    <actuator name="right_hip_yaw_motor">
+      <hardwareInterface>position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_hip_roll_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_hip_roll">
+      <hardwareInterface>position</hardwareInterface>
+    </joint>
+    <actuator name="right_hip_roll_motor">
+      <hardwareInterface>position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_hip_pitch_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_hip_pitch">
+      <hardwareInterface>position</hardwareInterface>
+    </joint>
+    <actuator name="right_hip_pitch_motor">
+      <hardwareInterface>position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_knee_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_knee">
+      <hardwareInterface>position</hardwareInterface>
+    </joint>
+    <actuator name="right_knee_motor">
+      <hardwareInterface>position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_ankle_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_ankle">
+      <hardwareInterface>position</hardwareInterface>
+    </joint>
+    <actuator name="right_ankle_motor">
+      <hardwareInterface>position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
 <!-- robot control-->
   <ros2_control name="robot_controller" type="system">
     <hardware>
@@ -676,7 +790,4 @@
   <gazebo reference="neck">
     <gravity>0</gravity>
   </gazebo>
-
-  
-
 </robot>

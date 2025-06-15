@@ -15,6 +15,7 @@
 /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/package.xml
 /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/launch/display.launch.py
 /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/launch/gazebo.launch.py
+/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/launch/main.launch.py
 /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/ear_left.stl
 /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/ear_right.stl
 /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/urdf_description/share/urdf_description/meshes/head_body_pitch.stl
