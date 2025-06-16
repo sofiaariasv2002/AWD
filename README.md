@@ -47,7 +47,7 @@ En la siguiente sección se realizará el análisis de la pierna izquierda del r
 
 # Visualización de la posición del efector final en RViz
 
-Se calculo la posicion de la pelvis respecto al pie Izquierdo usando una cadena de transformaciones de Denavit-Hartenberg (DH).
+Se calculó la posición de la pelvis respecto al pie Izquierdo usando una cadena de transformaciones de Denavit-Hartenberg (DH).
 
 Se extanjeron los parametros de las articulaciones desde el URDF, en el orden: left_ankle → left_knee → left_hip_pitch → left_hip_roll → left_hip_yaw → pelvis.
 
