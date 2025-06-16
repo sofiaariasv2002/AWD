@@ -1,5 +1,5 @@
 # Análisis cinemático: Tabla de Denavit-Hartenberg
-En la siguiente seccion se realizara el analisis de la pierna izquierda del robot AWD bipoide
+En la siguiente seccion se realizara el analisis de la pierna izquierda del robot AWD bípedo
 
 Pasos:
 
@@ -7,7 +7,7 @@ Pasos:
 
     ![alt text](imagenes/ReferenciaRviz.png)
 
-    Foto 1. Ejes de nuestro robot bipoide
+    Foto 1. Ejes de nuestro robot bípedo
 
     En Gazebo el eje rojo es X, el eje verde es Y, y el eje azul es Z.
 
@@ -292,7 +292,7 @@ En rviz, con el joint_state_publisher_gui_node se movieron las articulaciones de
 
 En el URDF se tuvieron que mover los axis ya que estaban invertidos, la pierna derecha iba hacia adelante y la pierna izquierda hacia atras, con los mismos parametris de la sentadilla, asi que se invirtio el axis de la derecha para evitar confuciones en el comand de la sentadilla.
 
-Otra modificacion que se tuvo que realizar fue crear un archivo main.launch.py ya que si lanzaba tanto el launch de gazebo y el de display a la vez el robot_state se duplicaba y ocacionaba que el robot oscilara. Tambien se tuvo que quitar la joint_state_publisher_gui_node en este main.launch ya que ocacionaba confision en rviz y hacia que a el bipoide se moviera raro.
+Otra modificacion que se tuvo que realizar fue crear un archivo main.launch.py ya que si lanzaba tanto el launch de gazebo y el de display a la vez el robot_state se duplicaba y ocacionaba que el robot oscilara. Tambien se tuvo que quitar la joint_state_publisher_gui_node en este main.launch ya que ocacionaba confision en rviz y hacia que a el bípedo se moviera raro.
 
 Se uso el siguiente codigo para probar: 
 
