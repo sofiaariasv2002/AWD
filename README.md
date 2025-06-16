@@ -87,6 +87,67 @@ Pasos:
 
 # Visualización de la posición del efector final en RViz
 
+Se calculo la posicion de la pelvis respecto al pie Izquierdo usando una cadena de transformaciones de Denavit-Hartenberg (DH).
+
+Se extanjeron los parametros de las articulaciones desde el URDF, en el orden: left_ankle → left_knee → left_hip_pitch → left_hip_roll → left_hip_yaw → pelvis.
+
+Los parametros fueron organizados en una tabla invertida, ya que el objetivo era la posicion del pelvis respecto al pie.
+
+Para hacer esto de forma fácil se utilizo un nodo en ros2 que escucha el topico joint_state y recorre la tabla DH y multiplica las matrices homogeneas para cada articulacion usando: 
+
+
+$$
+T_i = \begin{bmatrix}
+\cos\theta_i & -\sin\theta_i \cos\alpha_i & \sin\theta_i \sin\alpha_i & a_i \cos\theta_i \\
+\sin\theta_i & \cos\theta_i \cos\alpha_i & -\cos\theta_i \sin\alpha_i & a_i \sin\theta_i \\
+0 & \sin\alpha_i & \cos\alpha_i & d_i \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+Al final, se aplica un vector de offset desde la última articulación (left_hip_yaw) al centro de la pelvis.
+
+Se publica un visualization_msgs/Marker en el frame pelvis con la posición final de la pelvis calculada.
+
+![alt text](imagenes/DH-pelvis.png)
+
+Esta fue la posición obtenida: 
+
+        [INFO] [1750046500.948614672] [pelvis_marker_publisher]: Pelvis (desde pie): x=0.165, y=-0.122, z=0.207
+Para confirmar que fuera correcto se uso ros2 run tf2_ros tf2_echo pelvis left_foot_link que arroja la posicion del pie izquierdo respecto a la pelvis como una transformacion TF.
+
+    - Translation: [-0.055, 0.104, 0.081]
+    - Rotation: in Quaternion [0.000, -0.006, 0.000, 1.000]
+    - Rotation: in RPY (radian) [0.000, -0.013, 0.000]
+    - Rotation: in RPY (degree) [0.000, -0.729, 0.000]
+    - Matrix:
+    1.000 -0.000 -0.013 -0.055
+    0.000  1.000 -0.000  0.104
+    0.013  0.000  1.000  0.081
+    0.000  0.000  0.000  1.000                                                                                                             [INFO] [1750046500.948614672] [pelvis_marker_publisher]: Pelvis (desde pie): x=0.165, y=-0.122, z=0.207
+
+Ambos valores representan transformaciones inversas:
+
+  Da la posición del pie desde la pelvis:  
+$$
+T_{\text{foot} \to \text{pelvis}}
+$$
+ 
+  Da la posición de la pelvis desde el pie:
+  
+ $$
+T_{\text{pelvis} \to \text{foot}}
+$$
+
+Ambas transformaciones están relacionadas como matrices inversas:  
+
+$$
+T_{\text{foot} \to \text{pelvis}} = T^{-1}_{\text{pelvis} \to \text{foot}}
+$$
+Si se realizara este procedimiento a mano tendria que construir todas las matrices de DH individuales. Multiplicar las 5 transformadas ya que va desde el pie hasta la pelvis
+$$
+T_{\text{foot} \to \text{pelvis}} = T_1 \cdot T_2 \cdot T_3 \cdot T_4 \cdot T_5
+$$
 
 
 # Simulación en Gazebo con controladores
@@ -263,4 +324,6 @@ Se uso el siguiente codigo para probar:
 El robot se sapwnea tirado desde el inicio, por lo que no hay efecto de gravedad que mande al robot hacia abajo a la hora de realizar la sentadilla. Lo que se realizo para evaluar que estuviera bien efectuada fue comparar la simulacion en gazebo y rviz, y que en rviz levantara las patitas mientras que en gazebo se viera el movimiento. 
 
 [Haz clic para ver el video](imagenes/sentadilla.mp4)
+
+EL PATO ES MUY CHIQUITO COMO PARA PODER INCREMENTAR EL MOVIMIENTO
 

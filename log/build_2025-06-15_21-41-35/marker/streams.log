@@ -1,0 +1,21 @@
+[0.467s] Invoking command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/marker': PYTHONPATH=/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/marker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/marker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/marker build --build-base /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/marker/build install --record /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/marker/install.log --single-version-externally-managed install_data
+[0.634s] running egg_info
+[0.635s] writing ../../build/marker/marker.egg-info/PKG-INFO
+[0.636s] writing dependency_links to ../../build/marker/marker.egg-info/dependency_links.txt
+[0.636s] writing entry points to ../../build/marker/marker.egg-info/entry_points.txt
+[0.636s] writing requirements to ../../build/marker/marker.egg-info/requires.txt
+[0.637s] writing top-level names to ../../build/marker/marker.egg-info/top_level.txt
+[0.638s] reading manifest file '../../build/marker/marker.egg-info/SOURCES.txt'
+[0.639s] writing manifest file '../../build/marker/marker.egg-info/SOURCES.txt'
+[0.639s] running build
+[0.639s] running build_py
+[0.639s] running install
+[0.639s] running install_lib
+[0.640s] running install_data
+[0.640s] running install_egg_info
+[0.641s] removing '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/marker/lib/python3.10/site-packages/marker-0.0.0-py3.10.egg-info' (and everything under it)
+[0.642s] Copying ../../build/marker/marker.egg-info to /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/marker/lib/python3.10/site-packages/marker-0.0.0-py3.10.egg-info
+[0.643s] running install_scripts
+[0.661s] Installing marker_node script to /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/marker/lib/marker
+[0.662s] writing list of installed files to '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/marker/install.log'
+[0.682s] Invoked command in '/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/src/marker' returned '0': PYTHONPATH=/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/marker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sofia/sextoSem/robotica_inteligente/humanoides/disney/install/marker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/marker build --build-base /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/marker/build install --record /home/sofia/sextoSem/robotica_inteligente/humanoides/disney/build/marker/install.log --single-version-externally-managed install_data
