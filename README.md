@@ -144,7 +144,9 @@ Ambas transformaciones están relacionadas como matrices inversas:
 $$
 T_{\text{foot} \to \text{pelvis}} = T^{-1}_{\text{pelvis} \to \text{foot}}
 $$
+
 Si se realizara este procedimiento a mano tendria que construir todas las matrices de DH individuales. Multiplicar las 5 transformadas ya que va desde el pie hasta la pelvis
+
 $$
 T_{\text{foot} \to \text{pelvis}} = T_1 \cdot T_2 \cdot T_3 \cdot T_4 \cdot T_5
 $$
