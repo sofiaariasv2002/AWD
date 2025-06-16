@@ -129,6 +129,7 @@ Para confirmar que fuera correcto se uso ros2 run tf2_ros tf2_echo pelvis left_f
 Ambos valores representan transformaciones inversas:
 
   Da la posición del pie desde la pelvis:  
+  
 $$
 T_{\text{foot} \to \text{pelvis}}
 $$
