@@ -5,7 +5,7 @@ Pasos:
 
 1. Obtuvimos de rviz los ejes de nuestro robot para vizualizar como estan orientados.
 
-    ![alt text](image-3.png)
+    ![alt text](imagenes/ReferenciaRviz.png)
 
     Foto 1. Ejes de nuestro robot bipoide
 
@@ -58,7 +58,7 @@ Pasos:
 
 3. Despues de analizar los marcos obtuvimos la siguiente tabla de Denavit-Hatenberg:
 
-    ![alt text](image-2.png)
+    ![alt text](imagenes/DH-pato.png)
 
     El procedimiento que se realizo para llegar a esto estuvo basado en el URDF:
 
@@ -86,6 +86,8 @@ Pasos:
 
 
 # Visualización de la posición del efector final en RViz
+
+
 
 # Simulación en Gazebo con controladores
 Para simular el robot BDX en Gazebo y permitir que reciba comandos de posición mediante controladores, seguí el siguiente procedimiento:
@@ -219,7 +221,46 @@ Y por ultimo el state_interface  leerá tanto la posición actual como la veloci
 
 Durante el lanzamiento, este archivo se carga desde un archivo .launch.py que inicia tanto Gazebo como los controladoresque se comunican con el controller_manager.
 
-
-
-
 # Generación heurística de una sentadilla
+Para la configuracion de la sentafilla se genero por medio de prueba y error.
+
+En rviz, con el joint_state_publisher_gui_node se movieron las articulaciones de las patitas hasta llegar a realizar la pose de una sentadilla.
+
+En el URDF se tuvieron que mover los axis ya que estaban invertidos, la pierna derecha iba hacia adelante y la pierna izquierda hacia atras, con los mismos parametris de la sentadilla, asi que se invirtio el axis de la derecha para evitar confuciones en el comand de la sentadilla.
+
+Otra modificacion que se tuvo que realizar fue crear un archivo main.launch.py ya que si lanzaba tanto el launch de gazebo y el de display a la vez el robot_state se duplicaba y ocacionaba que el robot oscilara. Tambien se tuvo que quitar la joint_state_publisher_gui_node en este main.launch ya que ocacionaba confision en rviz y hacia que a el bipoide se moviera raro.
+
+Se uso el siguiente codigo para probar: 
+
+    ros2 topic pub --once /joint_trajectory_controller/joint_trajectory trajectory_msgs/JointTrajectory "{
+        joint_names: ['left_hip_yaw', 'left_hip_roll', 'left_hip_pitch',
+                    'left_knee', 'left_ankle',
+                    'right_hip_yaw', 'right_hip_roll', 'right_hip_pitch',
+                    'right_knee', 'right_ankle'],
+        points: [{
+        positions: [0.0, 0.0, 0.437, 0.785, 0.344,
+                    0.0, 0.0, 0.437, 0.785, 0.344],
+        time_from_start: {sec: 5}
+        }]
+    }"
+
+    sleep 6
+
+    ros2 topic pub --once /joint_trajectory_controller/joint_trajectory trajectory_msgs/JointTrajectory "{
+        joint_names: ['left_hip_yaw', 'left_hip_roll', 'left_hip_pitch',
+                    'left_knee', 'left_ankle',
+                    'right_hip_yaw', 'right_hip_roll', 'right_hip_pitch',
+                    'right_knee', 'right_ankle'],
+        points: [{
+        positions: [0.0, 0.0, 0.0, 0.0, 0.0,
+                    0.0, 0.0, 0.0, 0.0, 0.0],
+        time_from_start: {sec: 5}
+        }]
+    }"
+
+    sleep 6
+
+El robot se sapwnea tirado desde el inicio, por lo que no hay efecto de gravedad que mande al robot hacia abajo a la hora de realizar la sentadilla. Lo que se realizo para evaluar que estuviera bien efectuada fue comparar la simulacion en gazebo y rviz, y que en rviz levantara las patitas mientras que en gazebo se viera el movimiento. 
+
+[Haz clic para ver el video](imagenes/sentadilla.mp4)
+

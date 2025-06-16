@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/marker/marker.egg-info/PKG-INFO
+../../build/marker/marker.egg-info/SOURCES.txt
+../../build/marker/marker.egg-info/dependency_links.txt
+../../build/marker/marker.egg-info/entry_points.txt
+../../build/marker/marker.egg-info/requires.txt
+../../build/marker/marker.egg-info/top_level.txt
+../../build/marker/marker.egg-info/zip-safe
+marker/__init__.py
+marker/marker_node.py
+resource/marker
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
