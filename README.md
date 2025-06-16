@@ -1,5 +1,5 @@
 # Análisis cinemático: Tabla de Denavit-Hartenberg
-En la siguiente seccion se realizara el analisis de la pierna izquierda del robot AWD bipode
+En la siguiente seccion se realizara el analisis de la pierna izquierda del robot AWD bipoide
 
 Pasos:
 
