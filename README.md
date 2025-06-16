@@ -1,9 +1,9 @@
 # Análisis cinemático: Tabla de Denavit-Hartenberg
-En la siguiente seccion se realizara el analisis de la pierna izquierda del robot AWD bipoide
+En la siguiente seccion se realizará el analisis de la pierna izquierda del robot AWD bipedo
 
 Pasos:
 
-1. Obtuvimos de rviz los ejes de nuestro robot para vizualizar como estan orientados.
+1. Obtuvimos de rviz los ejes de nuestro robot para visualizar como estan orientados.
 
     ![alt text](imagenes/ReferenciaRviz.png)
 
@@ -11,7 +11,7 @@ Pasos:
 
     En Gazebo el eje rojo es X, el eje verde es Y, y el eje azul es Z.
 
-2. Basado en el URDF pudimos obtener que la cadena cinematica del robot:
+2. Basado en el URDF pudimos obtener que la cadena cinemática del robot:
 
     S0 (Pelvis)
 
@@ -56,7 +56,7 @@ Pasos:
     S5 (ankle)
 
 
-3. Despues de analizar los marcos obtuvimos la siguiente tabla de Denavit-Hatenberg:
+3. Después de analizar los marcos de referencia, obtuvimos la siguiente tabla de Denavit-Hartenberg:
 
     ![alt text](imagenes/DH-pato.png)
 
